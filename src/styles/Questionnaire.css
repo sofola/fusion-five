@@ -1,3 +1,8 @@
+* {
+  background: none;
+  background-image: none;
+
+}
 .questionnaire {
   padding: 20px;
   font-family: Arial, sans-serif;

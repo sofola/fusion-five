@@ -1,5 +1,6 @@
 * {
     background: #E9EAEE;
+    background-image: none;
     font-weight: bold;
 }
 
@@ -13,6 +14,8 @@
     margin-bottom: 10px;
     border: none;
     appearance: none; 
+    font-size: 14px;
+    margin-left: 2.5%;
 }
 
 .container {
@@ -37,4 +40,5 @@ a {
     color: white; 
     background: inherit;
     text-decoration: none;
+    font-size: inherit;
   }
