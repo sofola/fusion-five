@@ -1,0 +1,40 @@
+* {
+    background: #E9EAEE;
+    font-weight: bold;
+}
+
+.menuBtn{
+    width: 95%;
+    background: #020953;
+    color: #fff;
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    appearance: none; 
+}
+
+.container {
+    margin-top: 7px;
+    height: 60px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+#faq{
+    width: 320px;
+    margin-bottom: 75px;
+    font-family: sans-serif;
+    
+}
+
+#faq, #faq p{
+    background: #D9D9D9;
+}
+a {
+    color: white; 
+    background: inherit;
+    text-decoration: none;
+  }
