@@ -1,6 +1,7 @@
 .questionnaire {
   padding: 20px;
   font-family: Arial, sans-serif;
+  color: #020953;
 }
 
 .section {
@@ -20,20 +21,20 @@
 
 button {
   padding: 10px 20px;
-  border: 2px solid #000080;
+  border: 2px solid #020953;
   background-color: #fff;
-  color: #000080;
+  color: #020953;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button.selected {
-  background-color: #000080;
+  background-color: #020953;
   color: #fff;
 }
 
 button:hover {
-  background-color: #000080;
+  background-color: #020953;
   color: #fff;
 }
