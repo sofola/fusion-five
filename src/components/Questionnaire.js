@@ -21,9 +21,9 @@ const Questionnaire = ({ sections }) => {
   };
 
 
-  const handleSubmit = async () => {
+  const handleNext = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/submit', {  // Make sure this URL matches your Flask server address
+      const response = await fetch('http://127.0.0.1:5000/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,6 +35,10 @@ const Questionnaire = ({ sections }) => {
     } catch (error) {
       console.error('Error submitting data:', error);
     }
+  };
+
+  const handleSkip = () => {
+    console.log('Skip button clicked');
   };
 
   return (
@@ -67,9 +71,14 @@ const Questionnaire = ({ sections }) => {
           </div>
         </div>
       ))}
-      <button className="submit-button" onClick={handleSubmit}>
-        Submit
-      </button>
+      <div className="button-group">
+        <button className="next-button" onClick={handleNext}>
+          Next
+        </button>
+        <button className="skip-button" onClick={handleSkip}>
+          Skip
+        </button>
+      </div>
     </div>
   );
 };

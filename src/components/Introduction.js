@@ -3,40 +3,35 @@ import Questionnaire from './Questionnaire';
 
 const sectionsIntro = [
   {
-    title: 'My age is',
+    title: 'MY AGE IS',
     options: ['16 - 20', '21 - 30', '31 - 50', '50 - 60', '60 +'],
     type: 'single',
   },
   {
-    title: 'My skincare challenge is',
-    options: ['Smoking', 'Sun exposure', 'Stress'],
+    title: 'MY SKINCARE CHALLENGE IS',
+    options: ['SMOKING', 'SUN EXPOSURE', 'STRESS'],
     type: 'single',
   },
   {
-    title: 'Products I use',
-    options: ['Moisturiser', 'Serum', 'Cleaner'],
+    title: 'PRODUCT I USE',
+    options: ['MOISTURE','SERUM','CLEANER'],
     type: 'multiple',
   },
   {
-    title: 'My skin type is',
-    options: ['Normal', 'Oily', 'Acne', 'Sensitive'],
+    title: 'MY SKIN TYPE IS',
+    options: ['NORMAL', 'OILY', 'ACNE', 'SENSITIVE'],
     type: 'single',
   },
   {
-    title: 'My concern is/take care of',
-    options: ['Wrinkles', 'Acne', 'Irritation', 'Redness', 'Dry skin', 'Pigmentation spots'],
+    title: 'MY CONSERN IS/TAKE CARE OF',
+    options: ['WRINKLES', 'ACNE', 'IRRITATION', 'REDNESS', 'DRY SKIN', 'PIGMENTATION SPOTS'],
     type: 'multiple',
   },
   {
-    title: 'Brands I use',
-    options: ['Vichy', 'Sun exposure', 'Soumis au stress'],
+    title: 'MY BAD HABIT IS',
+    options: ['SMOKING','SUN EXPOSURE','DRINK ALCOHOL'],
     type: 'multiple',
-  },
-  {
-    title: 'Is there a specific ingredient your skin needs?',
-    options: ['Reposant', 'Sportif', 'Soumis au stress'],
-    type: 'single',
-  },
+  }
 ];
 
 const Introduction = () => {
