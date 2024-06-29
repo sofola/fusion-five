@@ -1,25 +1,22 @@
-import React from 'react';
+import React from "react";
 import {
-  BrowserRouter as Router, Link} from 'react-router-dom';
-import Introduction from './components/Introduction';
-import Ingredients from './components/Ingredients';
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Menu from './components/Menu';
+import Introduction from './components/Introduction'
 
 const App = () => {
   return (
     <Router>
-        <div className="App">
-          <Link path="/intro">
-            <Introduction />
-          </Link>
-          <Link path="/ingredients">
-            <Ingredients />
-          </Link>
-          <Link path="/">
-            <h1>Beiersdorf</h1>
-          </Link>
-        </div>
+      <div>
+        <Switch>
+          <Route path="/" exact component={Menu} />
+          <Route path="/question" exact component={Introduction} />
+        </Switch>
+      </div>
     </Router>
-  );
-};
-
+    );
+  }
 export default App;
