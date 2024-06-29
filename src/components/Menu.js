@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../img/Card.png'
 import '../styles/Menu.css'
 
-const ScrollableView = () => {
+const Menu = () => {
     return (
         <div style={{ overflowY: 'scroll', height: '100vh' }}>
             {/* View 1 */}
@@ -25,7 +25,7 @@ const ScrollableView = () => {
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
                 <img src={Banner} alt="Banner 3" style={{ width: '100%', maxWidth: '500px' }} />
                 <div class="container">
-                <button class="menuBtn"><a href='/question'>Discover Your Perfect Skincare Routine</a></button>
+                <button class="menuBtn">Discover Your Perfect Skincare Routine</button>
                 </div>      </div>
 
             {/* View 4 */}
@@ -35,14 +35,8 @@ const ScrollableView = () => {
                     <button class="menuBtn">Daily Skincare Challenge</button>
                 </div>      </div>
 
-            <div id="faq" style={{ display: 'flex', flexDirection: 'column', alignItems: 'left', padding: '20px' }}>
-                <p>"Answer Questions,
-                    View Others' Responses,
-                    and Earn Points"</p>
-            </div>
-
         </div>
     );
 };
 
-export default ScrollableView;
+export default Menu;
