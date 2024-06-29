@@ -1,9 +1,10 @@
 import React from "react";
 import Menu from './components/Menu';
-import ChallengeExplenation from "./components/ChallengeExplenation";
 import Start from "./components/Start"
 import Introduction from './components/Introduction'
 import GenderSelection from './components/GenderSelection'
+import IngredientSelection from "./components/Ingredients_Selection"
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +20,7 @@ function App() {
           <Route path="/menu" exact component={Menu} />
           <Route path="/gender-selection" component={GenderSelection} />
           <Route path="/question" exact component={Introduction} />
-          <Route path="/challenge_explenation" exact component={ChallengeExplenation} />
+          <Route path="/ingredients-selection" exact component={IngredientSelection}/>
         </Switch>
       </div>
     </Router>

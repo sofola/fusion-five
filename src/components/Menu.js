@@ -1,36 +1,42 @@
 import React from 'react';
-import Banner from '../img/Card.png'
+import A from '../img/a.png'
+import B from '../img/b.png'
+import C from '../img/c.png'
+import D from '../img/d.png'
+
+
+
 import '../styles/Menu.css'
 
 const Menu = () => {
     return (
         <div style={{ overflowY: 'scroll', height: '100vh' }}>
             {/* View 1 */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
-                <img src={Banner} alt="Banner 1" style={{ width: '100%', maxWidth: '500px' }} />
+            <div className="view">
+                <img src={A} alt="Banner 1" style={{ width: '100%', maxWidth: '500px' }} />
                 <div className="container">
                     <button className="menuBtn">View All Our Products</button>
                 </div>
             </div>
 
             {/* View 2 */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
-                <img src={Banner} alt="Banner 2" style={{ width: '100%', maxWidth: '500px' }} />
+            <div className="view">
+                <img src={B} alt="Banner 2" style={{ width: '100%', maxWidth: '500px' }} />
                 <div className="container">
                     <button className="menuBtn"><a href='https://www.nivea.co.uk/advice/findmyroutine#/'>Analyze Your Skin</a></button>
                 </div>
             </div>
 
             {/* View 3 */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
-                <img src={Banner} alt="Banner 3" style={{ width: '100%', maxWidth: '500px' }} />
+            <div className="view">
+                <img src={C} alt="Banner 3" style={{ width: '100%', maxWidth: '500px' }} />
                 <div className="container">
                     <button className="menuBtn"><a href='/question'>Discover Your Perfect Skincare Routine</a></button>
                 </div>      </div>
 
             {/* View 4 */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px' }}>
-                <img src={Banner} alt="Banner 4" style={{ width: '100%', maxWidth: '500px' }} />
+            <div className="view">
+                <img src={D} alt="Banner 4" style={{ width: '100%', maxWidth: '500px' }} />
                 <div className="container">
                     <button className="menuBtn">Daily Skincare Challenge</button>
                 </div>      </div>
