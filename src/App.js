@@ -10,7 +10,7 @@ import {
   Route
 } from "react-router-dom";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <div>
@@ -25,4 +25,6 @@ const App = () => {
     </Router>
     );
   }
+  );
+}
 export default App;
