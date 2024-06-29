@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.ing_prompt {
+    color: #334CA4;
+    width: 95%;
+    margin-left: 2%;
+    margin-right: 2.5%;
+    height: 50px;
+    font-size: 18px;
+}
+
+ul,
+li {
+    font-weight: lighter;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 2%;
+}
+
+input[type="checkbox"] {
+    border:transparent;
+    width: 28px;
+    height: 28px;
+    outline: 1px solid #407D23;
+    appearance: none;
+    background-color: white;
+    border: 1px solid #aaa;
+    position: relative;
+    margin-left: 10px;
+
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+/* Style the checkmark */
+input[type="checkbox"]::before {
+    content: '\2713'; /* Unicode checkmark symbol */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #407D23; /* Change the color of the checkmark */
+    visibility: hidden;
+}
+
+/* Show the checkmark when the checkbox is checked */
+input[type="checkbox"]:checked::before {
+    visibility: visible;
+}
