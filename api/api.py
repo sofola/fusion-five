@@ -1,35 +1,28 @@
-# app.py (Flask backend)
 from flask import Flask, request, jsonify
-import os
-from PIL import Image
+from flask_cors import CORS
+from product_suggestion import suggest_products
 
 app = Flask(__name__)
+CORS(app)
 
-# Define the upload folder
-UPLOAD_FOLDER = 'uploads'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+@app.route('/submit', methods=['POST'])
+def submit():
+    print('Request received')
+    data = request.json
+    print('Received data:', data)
+    if 'My skin type is' in data.keys():
+        product, ingredient = suggest_products(data['My skin type is'])
+        print([product, ingredient])
+    if data is None:
+        return jsonify({'status': 'error', 'message': 'No data received'}), 400
+    return jsonify({"product": product, "ingredient": ingredient})
+    # jsonify({'status': 'success', 'data': data})
 
-# API endpoint for image upload and modification
-@app.route('/upload', methods=['POST'])
-def upload_image():
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file part'})
-
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({'error': 'No selected file'})
-
-    # Save the uploaded image
-    filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
-    file.save(filename)
-
-    # Convert the image to greyscale
-    img = Image.open(filename).convert('L')
-    greyscale_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'greyscale_' + file.filename)
-    img.save(greyscale_filename)
-
-    print(greyscale_filename)
-    return jsonify({'greyscale_image_path': greyscale_filename})
+@app.route('/gender', methods=['POST'])
+def gender():
+    data = request.json
+    print('Received gender:', data)
+    return jsonify({'status': 'success', 'data': data})
 
 if __name__ == '__main__':
     app.run(debug=True)

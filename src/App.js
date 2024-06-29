@@ -1,8 +1,9 @@
 import React from "react";
 import Menu from './components/Menu';
-import Questionnaire from './components/Questionnaire';
 import ChallengeExplenation from "./components/ChallengeExplenation";
 import Start from "./components/Start"
+import Introduction from './components/Introduction'
+import GenderSelection from './components/GenderSelection'
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,13 +15,16 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route path="/" exact component={Start}/>
+          <Route path="/" exact component={Start} />
           <Route path="/menu" exact component={Menu} />
-          <Route path="/question" exact component={Questionnaire} />
+          <Route path="/gender-selection" component={GenderSelection} />
+          <Route path="/question" exact component={Introduction} />
           <Route path="/challenge_explenation" exact component={ChallengeExplenation} />
         </Switch>
       </div>
     </Router>
+    );
+  }
   );
 }
 export default App;
