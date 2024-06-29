@@ -1,12 +1,21 @@
-import React from 'react';
-import Questionnaire from './components/Questionnaire';
-
-const App = () => {
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Menu from './components/Menu';
+import Questionnaire from './components/Questionnaire'
+function App() {
   return (
-    <div className="App">
-      <Questionnaire />
+    <Router>
+    <div>
+    <Switch>
+    <Route path="/" exact component={Menu} />
+    <Route path="/question" exact component={Questionnaire} />
+    </Switch>
     </div>
-  );
-};
-
-export default App;
+    </Router>
+    );
+    }
+    export default App;
