@@ -1,0 +1,29 @@
+{
+    "Normal_Skin": [
+      "Hyaluronic Acid",
+      "Peptides",
+      "Glycolic Acid",
+      "Lactic Acid",
+      "Retinol"
+    ],
+    "Dry_Skin": [
+      "Hyaluronic Acid",
+      "Glycerin",
+      "Lactic Acid",
+      "Oil-based Cleansers"
+    ],
+    "Oily_Skin": [
+      "Retinol",
+      "Hyaluronic Acid",
+      "Salicylic Acid",
+      "Niacinamide"
+    ],
+    "Combination_Skin": [
+      "Niacinamide",
+      "Salicylic Acid",
+      "Vitamin C",
+      "Vitamin E",
+      "Ceramides",
+      "Fatty Acids"
+    ]
+  }
