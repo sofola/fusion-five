@@ -18,6 +18,11 @@ def submit():
     return jsonify({"product": product, "ingredient": ingredient})
     # jsonify({'status': 'success', 'data': data})
 
+@app.route('/gender', methods=['POST'])
+def gender():
+    data = request.json
+    print('Received gender:', data)
+    return jsonify({'status': 'success', 'data': data})
 
 if __name__ == '__main__':
     app.run(debug=True)

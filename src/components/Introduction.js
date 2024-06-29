@@ -14,16 +14,16 @@ const sectionsIntro = [
   },
   {
     title: 'PRODUCT I USE',
-    options: ['MOISTURE','SERUM','CLEANER'],
+    options: ['MOISTURE','SERUM','CLEANER','TONER','SUNSCREEN'],
     type: 'multiple',
   },
   {
     title: 'MY SKIN TYPE IS',
-    options: ['NORMAL', 'OILY', 'ACNE', 'SENSITIVE'],
+    options: ['NORMAL', 'OILY', 'DRY', 'COMBINATION'],
     type: 'single',
   },
   {
-    title: 'MY CONSERN IS/TAKE CARE OF',
+    title: 'MY CONCERN IS/TAKE CARE OF',
     options: ['WRINKLES', 'ACNE', 'IRRITATION', 'REDNESS', 'DRY SKIN', 'PIGMENTATION SPOTS'],
     type: 'multiple',
   },
