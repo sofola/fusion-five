@@ -37,10 +37,12 @@ def suggest_products(skin_type):
             suggested_products.append(product_name)
     
     if suggested_products:
+        return suggested_products, recommended_ingredients
         print("\nSuggested products:")
         for product in suggested_products:
             print(f"- {product}")
     else:
+        return [], recommended_ingredients
         print("\nNo products found matching the recommended ingredients.")
     
 # Example usage:

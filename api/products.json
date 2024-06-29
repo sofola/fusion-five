@@ -1,5 +1,82 @@
 [
-    {
+  {
+    "product_name" : "NIVEA Perfect & Matte Effect 3-in-1 Vanishing Cream-Nrm/Oily",
+    "does_not_include": [],
+    "ingredients": [
+      "Aqua", 
+      "Palmitic Acid", 
+      "Stearic Acid", 
+      "Glyceryl Stearate SE", 
+      "Glycerin", 
+      "Tapioca Starch", 
+      "C12-15 Alkyl Benzoate", 
+      "Isopropyl Palmitate", 
+      "Potassium Hydroxide", 
+      "Phenoxyethanol", 
+      "Dimethicone", 
+      "Laureth-23", 
+      "Myristic Acid", 
+      "Arachidic Acid", 
+      "Hydroxyethylcellulose", 
+      "Ethylhexylglycerin", 
+      "Trisodium EDTA", 
+      "Oleic Acid", 
+      "Sodium Ascorbyl Phosphate", 
+      "Maltodextrin", 
+      "Citrus Limon Juice", 
+      "Ascorbic Acid", 
+      "Linalool", 
+      "Geraniol", 
+      "Limonene", 
+      "Citronellol", 
+      "Citral", 
+      "Alpha-Isomethyl Ionone", 
+      "Parfum", 
+      "CI 77891",
+      "Retinol"
+    ],
+    "active_ingredients": []
+  },
+  {
+    "product_name": "NIVEA Perfect & Matte Effect 3-in-1 Vanishing Cream-Vry Oily",
+    "does_not_include": [],
+    "ingredients": [
+      "Aqua", 
+      "Palmitic Acid", 
+      "Stearic Acid", 
+      "Tapioca Starch", 
+      "Glyceryl Stearate SE", 
+      "Glycerin", 
+      "C12-15 Alkyl Benzoate", 
+      "Isopropyl Palmitate", 
+      "Potassium Hydroxide", 
+      "Phenoxyethanol", 
+      "Dimethicone", 
+      "Laureth-23", 
+      "Myristic Acid", 
+      "Arachidic Acid", 
+      "Hydroxyethylcellulose", 
+      "Ethylhexylglycerin", 
+      "Trisodium EDTA", 
+      "Oleic Acid", 
+      "Sodium Ascorbyl Phosphate", 
+      "Maltodextrin", 
+      "Citrus Limon Juice", 
+      "Ascorbic Acid", 
+      "Linalool", 
+      "Geraniol", 
+      "Limonene", 
+      "Citronellol", 
+      "Citral", 
+      "Alpha-Isomethyl Ionone", 
+      "Parfum", 
+      "CI 77891"
+    ],
+    "active_ingredients": []
+
+  },  
+  
+  {
       "product_name": "Q10 ANTI-WRINKLE POWER FIRMING DAY CREAM SPF 15",
       "does_not_include": [
         "Silicone"

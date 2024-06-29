@@ -11,10 +11,12 @@ def submit():
     data = request.json
     print('Received data:', data)
     if 'My skin type is' in data.keys():
-        suggest_products(data['My skin type is'])
+        product, ingredient = suggest_products(data['My skin type is'])
+        print([product, ingredient])
     if data is None:
         return jsonify({'status': 'error', 'message': 'No data received'}), 400
-    return jsonify({'status': 'success', 'data': data})
+    return jsonify({"product": product, "ingredient": ingredient})
+    # jsonify({'status': 'success', 'data': data})
 
 
 if __name__ == '__main__':
