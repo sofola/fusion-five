@@ -10,13 +10,16 @@ def submit():
     print('Request received')
     data = request.json
     print('Received data:', data)
-    if 'My skin type is' in data.keys():
-        product, ingredient = suggest_products(data['My skin type is'])
-        print([product, ingredient])
+    products, ingredients = [], []
+
+    if 'MY SKIN TYPE IS' in data.keys():
+        products, ingredients = suggest_products(data['MY SKIN TYPE IS'])
+        print([products, ingredients])
+
     if data is None:
         return jsonify({'status': 'error', 'message': 'No data received'}), 400
-    return jsonify({"product": product, "ingredient": ingredient})
-    # jsonify({'status': 'success', 'data': data})
+    #return jsonify({"product": product, "ingredient": ingredient})
+    return jsonify({"products": products, "ingredients": ingredients})
 
 @app.route('/gender', methods=['POST'])
 def gender():
