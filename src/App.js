@@ -6,6 +6,7 @@ import GenderSelection from './components/GenderSelection'
 import Introduction from './components/Introduction'
 import ChallengeExplenation from "./components/ChallengeExplenation";
 import Recommendation from './components/Recommendation';
+import IngredientSelection from "./components/Ingredients_Selection"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/question" exact component={Introduction} />
           <Route path="/challenge_explenation" exact component={ChallengeExplenation} />
           <Route path="/recommendation" component={Recommendation} />
+          <Route path="/ingredients-selection" exact component={IngredientSelection}/>
         </Switch>
       </div>
     </Router>
