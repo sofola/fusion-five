@@ -35,7 +35,12 @@
       "CI 77891",
       "Retinol"
     ],
-    "active_ingredients": []
+    "active_ingredients": [
+      "Palmitic Acid", 
+      "Stearic Acid", 
+      "Glyceryl Stearate SE", 
+      "Glycerin"
+    ]
   },
   {
     "product_name": "NIVEA Perfect & Matte Effect 3-in-1 Vanishing Cream-Vry Oily",
@@ -72,7 +77,12 @@
       "Parfum", 
       "CI 77891"
     ],
-    "active_ingredients": []
+    "active_ingredients": [
+      "Myristic Acid", 
+      "Arachidic Acid", 
+      "Hydroxyethylcellulose", 
+      "Ethylhexylglycerin"
+    ]
 
   },  
   
@@ -107,11 +117,14 @@
         "Benzyl Benzoate",
         "Cinnamyl Alcohol",
         "Coumarin",
-        "Parfum"
+        "Parfum",
+        "Fatty Acids"
       ],
       "active_ingredients": [
         "Coenzyme Q10", 
-        "Creatine"
+        "Creatine",
+        "Butylene Glycol",
+        "Alcohol Denat."
       ]
     },
 
@@ -150,7 +163,10 @@
           "Parfum"
         ],
         "active_ingredients": [
-          "Aloe Vera"
+          "Aloe Vera",
+          "Dicaprylyl Ether",
+          "Butyrospermum Parkii Butter",
+          "Glyceryl Stearate"
         ]
       },
 
@@ -177,7 +193,10 @@
           "Parfum"
         ],
         "active_ingredients": [
-          "NATURAL MOISTURISING FACTORS (NMFS)"
+          "NATURAL MOISTURISING FACTORS (NMFS)",
+          "Cetearyl Alcohol",
+          "Caprylic-Capric-Triglyceride",
+          "Distarch Phosphate"
         ]
       },
 
@@ -211,8 +230,10 @@
           "Parfum"
         ],
         "active_ingredients": [
-           "NATURAL MOISTURISING FACTORS (NMFS)"
-
+          "NATURAL MOISTURISING FACTORS (NMFS)",
+          "Glyceryl Stearate Citrate",
+          "Hydroxypropyl Starch Phosphate",
+          "Butyrospermum Parkii Butter"
         ]
       },
 
@@ -247,8 +268,10 @@
           "Parfum"
         ],
         "active_ingredients": [
-          "Glycolic Acid"
-          
+          "Glycolic Acid",
+          "Butyrospermum Parkii Butter",
+          "Glyceryl Stearate Citrate",
+          "Panthenol"          
         ]
       }
     
