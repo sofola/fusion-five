@@ -1,0 +1,100 @@
+.recommendation {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.recommendation h1 {
+  font-size: 18px;
+  padding:0;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.recommendation p {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #020953;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.filter-button {
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  padding:3px 5px;
+  color: #1C1C1E;
+  border: 0.27px solid #1C1C1E;
+  transition: all 0.3s ease;
+}
+
+.filter-button.selected,
+.filter-button:hover {
+  background-color: #61876E;
+  color: #DFDFD2;
+}
+
+.recommendation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #020953;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+
+.ingredients-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ingredients-list p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.price-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.fa-arrow-right {
+  font-size: 24px;
+  color: #000080;
+}

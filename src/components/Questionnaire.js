@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import '../styles/Questionnaire.css';
 
 const Questionnaire = ({ sections }) => {
   const [selections, setSelections] = useState({});
+  const history = useHistory();
 
   const handleOptionChange = (section, option) => {
     setSelections((prev) => ({
@@ -20,7 +22,6 @@ const Questionnaire = ({ sections }) => {
     }));
   };
 
-
   const handleNext = async () => {
     try {
       const response = await fetch('http://127.0.0.1:5000/submit', {
@@ -32,6 +33,7 @@ const Questionnaire = ({ sections }) => {
       });
       const data = await response.json();
       console.log('Response from backend:', data);
+      history.push('/recommendation', { state: data });
     } catch (error) {
       console.error('Error submitting data:', error);
     }
