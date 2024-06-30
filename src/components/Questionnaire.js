@@ -75,8 +75,7 @@ const Questionnaire = ({ sections }) => {
       ))}
       <div className="button-group">
         <button className="next-button" onClick={handleNext}>
-          <a href='/ingredients-selection'>Next</a>
-          
+         Next
         </button>
         <button className="skip-button" onClick={handleSkip}>
           Skip
