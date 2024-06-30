@@ -3,6 +3,7 @@ import A from '../img/a.png'
 import B from '../img/b.png'
 import C from '../img/c.png'
 import D from '../img/d.png'
+import E from '../img/e.png'
 
 
 
@@ -40,6 +41,14 @@ const Menu = () => {
                 <div className="container">
                     <button className="menuBtn">Daily Skincare Challenge</button>
                 </div>      </div>
+
+                {/* View 5 */}
+            <div className="view">
+                <img src={E} alt="Banner 5" style={{ width: '100%', maxWidth: '500px' }} />
+                <div className="container">
+                    <button className="menuBtn">Join the Skincare Community</button>
+                </div>      </div>
+
 
         </div>
     );
